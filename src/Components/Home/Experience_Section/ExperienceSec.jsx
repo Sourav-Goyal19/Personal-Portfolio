@@ -52,8 +52,8 @@ const ExperienceSec = (props) => {
                                             <img src={item.logo} className='w-full p-2 h-auto' alt="" />
                                         </div>
                                     </div>
-                                    <div className="experience-dot absolute -left-3  rounded-full bg-white z-20"></div>
-                                    <div className="timeline z-10 w-1 h-full absolute top-1 -left-1 bg-slate-200"></div>
+                                    <div data-aos="fade-left" className="experience-dot absolute -left-3  rounded-full bg-white z-20"></div>
+                                    <div data-aos="fade-down" className="timeline z-10 w-1 h-full absolute top-1 -left-1 bg-slate-200"></div>
                                     <div data-aos="fade-left" className="triangle2 absolute top-11 left-2"></div>
                                 </div>
                         )

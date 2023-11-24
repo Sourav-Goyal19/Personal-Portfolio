@@ -6,8 +6,10 @@ import './HomeSec.scss'
 import { useInView } from 'react-intersection-observer'
 import { useContext, useEffect, useRef } from 'react'
 import { AppContext } from '../../../App'
+import { useLocation } from 'react-router-dom'
 
 const HomeSec = () => {
+    const location = useLocation();
     const outerdivRef = useRef();
     const innerdivRef = useRef();
     const profileimageshadowRef = useRef();
@@ -45,15 +47,23 @@ const HomeSec = () => {
         })
     }, [])
 
+    useEffect(() => {
+        const handleRemoveName = () => {
+            setTimeout(() => {
+                removeNameFromCursor();
+                outerMouseRef.current.classList.remove('social-media-outer')
+                innerMouseRef.current.classList.remove('social-media-inner')
+            }, 900)
+        }
+        window.addEventListener('scroll', handleRemoveName)
+    }, [])
+
     return (
         <section className='Home'>
             <div className="homeContainer sectionContainer">
                 <div className="profile-container">
-                    {/* <div ref={profileimageshadowRef} className="profile-image-shadow"></div> */}
                     <div data-aos="zoom-in" ref={outerdivRef} className="profile-image-outerdiv">
-                        {/* <div ref={innerdivRef} className="profile-image-innerdiv"> */}
                         <img data-aos="zoom-in" data-aos-delay='300' src="/assets/blur3.jpg" id="profile-image" className='profile-image' alt="" />
-                        {/* </div> */}
                     </div>
                 </div>
                 <div className="personal-information-container">
