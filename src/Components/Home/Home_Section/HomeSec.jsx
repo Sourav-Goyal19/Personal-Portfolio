@@ -50,9 +50,9 @@ const HomeSec = () => {
             <div className="homeContainer sectionContainer">
                 <div className="profile-container">
                     {/* <div ref={profileimageshadowRef} className="profile-image-shadow"></div> */}
-                    <div ref={outerdivRef} className="profile-image-outerdiv">
+                    <div data-aos="zoom-in" ref={outerdivRef} className="profile-image-outerdiv">
                         {/* <div ref={innerdivRef} className="profile-image-innerdiv"> */}
-                        <img src="/assets/blur3.jpg" id="profile-image" className='profile-image' alt="" />
+                        <img data-aos="zoom-in" data-aos-delay='300' src="/assets/blur3.jpg" id="profile-image" className='profile-image' alt="" />
                         {/* </div> */}
                     </div>
                 </div>
