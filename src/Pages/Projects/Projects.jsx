@@ -12,33 +12,37 @@ export const Projects = () => {
     const [showModal, setShowModal] = useState(false);
     const [projects, setProjects] = useState([]);
 
+    window.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') {
+            setShowModal(false);
+        }
+    })
+
     const handleModalOpen = (project) => {
         setSelectedProject(project);
         setShowModal(true);
     };
 
     const handleLikeToggle = async (event, projectIndex, id) => {
-        // event.stopPropagation();
-        // const docRef = doc(db, "Projects", id);
-        // const results = await getDoc(docRef);
-        // const firebaseProject = results.data();
-        // console.log(firebaseProject);
-        // const updatedProject = projects.find(project => project.id = firebaseProject.id);
-        // console.log(updatedProject);
-        // updatedProject.liked = !updatedProject.liked;
-        // updatedProject.likes = updatedProject.liked
-        //     ? updatedProject.likes + 1
-        //     : updatedProject.likes - 1;
+        event.stopPropagation();
+        const docRef = doc(db, "Projects", id);
+        const results = await getDoc(docRef);
+        const firebaseProject = results.data();
+        const updatedProject = projects.find(project => project.id == firebaseProject.id);
+        updatedProject.liked = !updatedProject.liked;
+        updatedProject.likes = updatedProject.liked
+            ? updatedProject.likes + 1
+            : updatedProject.likes - 1;
 
-        // firebaseProject.likes = updatedProject.liked
-        //     ? firebaseProject.likes + 1
-        //     : firebaseProject.likes - 1;
-        // await updateDoc(docRef, firebaseProject);
-        // setProjects((prevProjects) => {
-        //     const updatedProjects = [...prevProjects];
-        //     updatedProjects[projectIndex] = updatedProject;
-        //     return updatedProjects;
-        // });
+        firebaseProject.likes = updatedProject.liked
+            ? firebaseProject.likes + 1
+            : firebaseProject.likes - 1;
+        await updateDoc(docRef, firebaseProject);
+        setProjects((prevProjects) => {
+            const updatedProjects = [...prevProjects];
+            updatedProjects[projectIndex] = updatedProject;
+            return updatedProjects;
+        });
     };
 
     useEffect(() => {
