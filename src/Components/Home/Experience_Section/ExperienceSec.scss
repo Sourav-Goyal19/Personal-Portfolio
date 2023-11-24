@@ -68,7 +68,7 @@
     }
 }
 
-.experience-img {
+.experience-dot {
     width: 20px;
     height: 20px;
     top: 2.25rem;
@@ -105,7 +105,7 @@
     padding-right: 46px;
 
     &:hover {
-        .experience-img {
+        .experience-dot {
             background: var(--textColor4);
         }
     }
@@ -115,7 +115,7 @@
         padding-right: 0;
         width: 100%;
 
-        .experience-img {
+        .experience-dot {
             left: 2px;
         }
 
@@ -137,13 +137,13 @@
     padding-left: 42px;
 
     &:hover {
-        .experience-img {
+        .experience-dot {
             background: var(--textColor4);
         }
     }
 
     @media screen and (max-width: 640px) {
-        .experience-img {
+        .experience-dot {
             left: -2px;
         }
 

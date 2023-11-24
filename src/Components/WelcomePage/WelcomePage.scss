@@ -20,7 +20,7 @@
     z-index: 100;
 
     h1 {
-        font-size: 55px;
+        font-size: calc(40px + 1.2vw);
         color: white;
         font-weight: lighter;
     }
@@ -52,29 +52,5 @@
     100% {
         top: 0;
         left: 200%;
-    }
-}
-
-@media screen and (max-width:1024px) {
-    .welcome-page h1 {
-        font-size: 50px;
-    }
-}
-
-@media screen and (max-width:768px) {
-    .welcome-page h1 {
-        font-size: 40px;
-    }
-}
-
-@media screen and (max-width:425px) {
-    .welcome-page h1 {
-        font-size: 30px;
-    }
-}
-
-@media screen and (max-width:375px) {
-    .welcome-page h1 {
-        font-size: 25px;
     }
 }

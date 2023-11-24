@@ -1,77 +1,6 @@
 import './SkillsSec.scss'
-import { useEffect, useRef } from 'react'
 
 const SkillsSec = (props) => {
-
-    // const sliderRef = useRef(null);
-    // useEffect(() => {
-    //     const slider = sliderRef.current;
-    //     let isMouseOverSlider = false;
-
-    //     const cloneChildren = () => {
-    //         const children = Array.from(slider.children);
-    //         children.forEach((child) => {
-    //             slider.appendChild(child.cloneNode(true));
-    //         });
-    //     };
-
-    //     const scrollWithRAF = () => {
-    //         if (slider && isMouseOverSlider) {
-    //             const scrollAmount = 0;
-    //             const targetScroll = slider.scrollLeft + scrollAmount;
-
-    //             slider.scrollLeft += (targetScroll - slider.scrollLeft) * 0.1;
-
-    //             if (slider.scrollLeft >= slider.scrollWidth / 2) {
-    //                 slider.scrollLeft = 0;
-    //             }
-    //         }
-    //         requestAnimationFrame(scrollWithRAF);
-    //     };
-
-    //     const scrollWithInterval = () => {
-    //         if (slider && !isMouseOverSlider) {
-    //             slider.style.transition = 'none';
-    //             slider.scrollLeft += 2;
-
-    //             if (slider.scrollLeft - 20 >= slider.scrollWidth / 2) {
-    //                 slider.scrollLeft = 0;
-    //                 setTimeout(() => {
-    //                     slider.style.transition = 'scroll 0.5s linear';
-    //                 }, 30);
-    //             } else {
-    //                 slider.style.transition = 'scroll 0.5s linear';
-    //             }
-    //         }
-    //     };
-
-    //     slider.addEventListener('mouseenter', () => {
-    //         isMouseOverSlider = true;
-    //         requestAnimationFrame(scrollWithRAF);
-    //     });
-
-    //     slider.addEventListener('mouseleave', () => {
-    //         isMouseOverSlider = false;
-    //         clearInterval(intervalId);
-    //         intervalId = setInterval(scrollWithInterval, 30);
-    //     });
-
-    //     cloneChildren();
-    //     let intervalId = setInterval(scrollWithInterval, 30);
-
-    //     return () => {
-    //         clearInterval(intervalId);
-    //         slider.removeEventListener('mouseenter', () => {
-    //             isMouseOverSlider = true;
-    //             requestAnimationFrame(scrollWithRAF);
-    //         });
-    //         slider.removeEventListener('mouseleave', () => {
-    //             isMouseOverSlider = false;
-    //             clearInterval(intervalId);
-    //             intervalId = setInterval(scrollWithInterval, 30);
-    //         });
-    //     };
-    // }, []);
 
     return (
         <section className='Skills' style={{ background: props.bgColor && props.bgColor }} >
@@ -97,6 +26,10 @@ const SkillsSec = (props) => {
                                     <div className="skill-content">
                                         <img src="/assets/skills/vitejs-icon.png" alt="" />
                                         <div className="skill-title">Vite Js</div>
+                                    </div>
+                                    <div className="skill-content">
+                                        <img src="/assets/skills/tailwindCSS-icon.png" alt="" />
+                                        <div className="skill-title">Tailwind CSS</div>
                                     </div>
                                     <div className="skill-content">
                                         <img src="/assets/skills/js2-icon.png" alt="" />
@@ -125,6 +58,10 @@ const SkillsSec = (props) => {
                                     <div className="skill-content">
                                         <img src="/assets/skills/vitejs-icon.png" alt="" />
                                         <div className="skill-title">Vite Js</div>
+                                    </div>
+                                    <div className="skill-content">
+                                        <img src="/assets/skills/tailwindCSS-icon.png" alt="" />
+                                        <div className="skill-title">Tailwind CSS</div>
                                     </div>
                                     <div className="skill-content">
                                         <img src="/assets/skills/js2-icon.png" alt="" />
