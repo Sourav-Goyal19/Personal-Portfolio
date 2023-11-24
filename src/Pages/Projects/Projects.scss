@@ -88,6 +88,27 @@
     }
 }
 
+.projectTypeLikes {
+    display: flex;
+    justify-content: space-between;
+
+    .project-likes {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        color: var(--textColor5);
+
+        svg {
+            font-size: 16px;
+            color: var(--textColor1);
+
+            &:hover {
+                color: var(--textColor4);
+            }
+        }
+    }
+}
+
 .project-type {
     color: var(--textColor4);
 }
