@@ -1,0 +1,93 @@
+.aboutPageHeading {
+    background: var(--gradient-red-hover);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: min(calc(15px + 0.7vw));
+
+    h1 {
+        font-weight: 500;
+        text-transform: capitalize;
+    }
+}
+
+.AboutPage {
+    padding: 1% 5% 5%;
+    background: #1e2024;
+}
+
+.aboutPageContent {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    p {
+        color: var(--textColor1);
+        width: 90%;
+        font-size: var(--pFontSize);
+        text-align: justify;
+
+        span {
+            background: var(--gradient-red-hover);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+    }
+}
+
+.aboutResume {
+    opacity: 1;
+    border-width: 1px;
+    font-weight: 300;
+    -webkit-transition: all 0.45s ease;
+    -o-transition: all 0.45s ease;
+    transition: all 0.45s ease;
+    width: 150px;
+    height: 40px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: 10px;
+
+    &:hover {
+        background: var(--gradient-red-hover);
+        font-weight: 400;
+    }
+}
+
+
+.resumeSection {
+    background: var(--bgColor3);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: var(--pFontSize);
+    color: var(--textColor1);
+    border: 1px solid #fff;
+    border-width: 1px 0 1px;
+    padding: 15px 0;
+}

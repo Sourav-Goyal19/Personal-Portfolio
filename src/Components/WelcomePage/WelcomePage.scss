@@ -1,0 +1,80 @@
+.welcome-page {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: var(--bgColor4);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    z-index: 100;
+
+    h1 {
+        font-size: 55px;
+        color: white;
+        font-weight: lighter;
+    }
+}
+
+.welcomeUp {
+    -webkit-animation: welcomeUp 1s linear forwards;
+    animation: welcomeUp 1s linear forwards;
+}
+
+@-webkit-keyframes welcomeUp {
+    0% {
+        top: 0;
+        left: 0;
+    }
+
+    100% {
+        top: 0;
+        left: 200%;
+    }
+}
+
+@keyframes welcomeUp {
+    0% {
+        top: 0;
+        left: 0;
+    }
+
+    100% {
+        top: 0;
+        left: 200%;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .welcome-page h1 {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .welcome-page h1 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .welcome-page h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .welcome-page h1 {
+        font-size: 25px;
+    }
+}

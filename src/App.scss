@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.App {
+  --textColor1: #ffffff;
+  --textColor2: #000000;
+  --textColor3: #c9c8c8;
+  --textColor4: #FF014F;
+  --textColor5: #BBCBBF;
+  --bgColor1: #141518;
+  --bgColor2: #282828;
+  --bgColor3: #212428;
+  --bgColor4: linear-gradient(145deg, #1e2024, #23272b);
+  --bgColor5: #191B1E;
+  --bgColor6: #e2e8f0;
+  --borderColor: #403F40;
+  --pFontSize: min(calc(12px + 0.7vw), 20px);
+  --sectionFontSize: min(calc(42px + 1.3vw), 60px);
+  --sectionSmallSize: 40px;
+  --pSmallSize: 18px;
+  --linearGradient1: linear-gradient(90deg, #00ffee 0%, #ff05ed 48%, #08ffde 100%);
+  --linearGradient2: linear-gradient(90deg, #00ffee 0%, #ff05ed 100%);
+  --linearGradient3: linear-gradient(90deg, #00ffee 0%, #3cc7da 49%, #e273e2 52%, #ff05ed 100%);
+  --linearGradient4: linear-gradient(-135deg, #c850c0, #4158d8);
+  --linearGradient5: radial-gradient(circle at 12.3% 19.3%, #5558da 0%, #5fd1f9 100.2%);
+  --linearGradient6: linear-gradient(-135deg, #4158d8, #c850c0);
+  --linearGradient7: linear-gradient(to top, #0fd850 0%, #f9f047 100%);
+  --linearGradient8: linear-gradient(to right, #FF00FF, #00FFFF);
+  --linearGradient9: linear-gradient(-135deg, #3e18c3, #ca00ff);
+  overflow: hidden;
+
+  --color-primary: #ff014f;
+  --color-secondary: #f4f5f6;
+  --color-tertiary: #0d1013;
+  --color-gray: #f6f6f6;
+  --color-subtitle: #f9004d;
+
+  // background-color
+  --background-color-1: linear-gradient(145deg, #1e2024, #23272b);
+  --background-color-2: #212428;
+
+  // box-shadow
+  --shadow-1: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+  --shadow-2: inset 21px 21px 19px #181a1d, inset -21px -21px 19px #202225;
+  --inner-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset, -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;
+  --shadow-white-3: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
+
+
+  // Gradient
+  --gradient-box-w: linear-gradient(145deg, #e2e8ec, #ffffff);
+  --gradient-red-hover: linear-gradient(145deg, #ff014f, #d11414);
+
+
+  // typo Color
+  --color-heading: #ffffff;
+  --color-heading-wv: #1e2125;
+  --color-body: #878e99;
+  --color-body-white: #3c3e41;
+  --color-lightn: #c4cfde;
+
+  // Gery Colors 
+  // --color-midgray: #9F9F9F;
+  --color-midgray: #878787;
+  --color-light: #E4E6EA;
+  --color-lighter: #CED0D4;
+  --color-lightest: #F0F2F5;
+  --color-border: #E6E6E6;
+  --color-white: #ffffff;
+  --color-white-75: rgba(255, 255, 255, 0.75);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: none;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+  background: #1F2226;
+}
+
+*::-moz-selection {
+  background: var(--textColor2);
+  color: white;
+}
+
+*::selection {
+  background: var(--textColor2);
+  color: white;
+}
+
+main {
+  height: 100vh;
+  background: var(--linearGradient4);
+}
+
+section {
+  padding: 120px 5%;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  border-bottom: 0.1px solid rgb(23, 22, 22);
+}
+
+.upperSpace {
+  width: 100%;
+  height: 72.8px;
+  background: var(--bgColor3);
+
+  @media screen and (max-width: 941px) {
+    height: 80.8px;
+  }
+
+  @media screen and (max-width: 402px) {
+    height: 64.8px;
+  }
+}
+
+.sectionContainer {
+  max-width: 1440px;
+}
+
+a {
+  cursor: none;
+  text-decoration: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body::-webkit-scrollbar,
+*::-webkit-scrollbar {
+  display: none;
+}
+
+#scrollPath {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+}
+
+.slide-in,
+.slide-out {
+  position: fixed;
+  z-index: 52;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #0f0f0f;
+  -webkit-transform-origin: top;
+  -ms-transform-origin: top;
+  transform-origin: top;
+
+  &.slide-out {
+    -webkit-transform-origin: bottom;
+    -ms-transform-origin: bottom;
+    transform-origin: bottom;
+  }
+}
+
+.volumeIcon {
+  position: fixed;
+  top: 90px;
+  right: 14px;
+  color: white;
+  width: min(calc(35px + 1.4vw), 50px);
+  height: min(calc(35px + 1.4vw), 50px);
+  border-radius: 50%;
+  padding: 10px;
+  -webkit-transition: all 0.45s ease;
+  -o-transition: all 0.45s ease;
+  transition: all 0.45s ease;
+  z-index: 100;
+  border: 1px solid #d9d9d9;
+
+  &:hover {
+    background: var(--bgColor1);
+    border: none;
+  }
+}
+
+.progressBar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 8px;
+  height: 0%;
+  background: var(--gradient-red-hover);
+  z-index: 52;
+  border-radius: 30px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--gradient-red-hover);
+    -webkit-filter: blur(20px);
+    filter: blur(20px);
+  }
+}
+
+.innerMouse {
+  width: 5px;
+  height: 5px;
+  background: var(--textColor1);
+}
+
+.outerMouse {
+  width: 25px;
+  height: 25px;
+  border: 2px solid var(--textColor1);
+  -webkit-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+.innerMouse,
+.outerMouse {
+  position: fixed;
+  z-index: 999;
+  pointer-events: none;
+  top: -100px;
+  left: 0;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+.transitionPage {
+  height: 100vh;
+  width: 100%;
+  background: var(--bgColor1);
+  position: fixed;
+  bottom: -200%;
+  left: 0;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  color: var(--textColor5);
+  font-size: 55px;
+  z-index: 1000;
+  font-weight: 300;
+
+  &.ActivePageTransition {
+    -webkit-animation: pt 1.5s linear;
+    animation: pt 1.5s linear;
+  }
+
+  @-webkit-keyframes pt {
+    0% {
+      opacity: 0;
+    }
+
+    10% {
+      opacity: 1;
+    }
+
+    30%,
+    75% {
+      bottom: 0;
+    }
+
+    100% {
+      bottom: 100%;
+    }
+  }
+
+  @keyframes pt {
+    0% {
+      opacity: 0;
+    }
+
+    10% {
+      opacity: 1;
+    }
+
+    30%,
+    75% {
+      bottom: 0;
+    }
+
+    100% {
+      bottom: 100%;
+    }
+  }
+}

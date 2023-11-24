@@ -1,0 +1,274 @@
+.Contact {
+    padding: 0 5% 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: #1e2024;
+}
+
+.contactContent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 1200px;
+    width: calc(300px + 56vw);
+    border: 1px solid var(--textColor4);
+    border-radius: 20px;
+    padding: 20px 0;
+    color: var(--textColor1);
+    overflow: hidden;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(to right bottom, #212428, #16181c);
+}
+
+.contactHeading {
+    margin-bottom: 30px;
+}
+
+.TTM,
+.contactFormContainer,
+form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 15px;
+    width: 50%;
+
+    .contactSecondHeading {
+        font-size: max(20px, min(calc(12px + 1.2vw), 30px));
+        margin-bottom: 20px;
+    }
+}
+
+.socialBox {
+    width: 350px;
+    height: 170px;
+    color: var(--textColor1);
+    background: var(--bgColor4);
+    -webkit-box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 12px;
+    -webkit-transition: all 0.45s ease;
+    -o-transition: all 0.45s ease;
+    transition: all 0.45s ease;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(to right bottom, #212428, #16181c);
+
+    &:hover {
+        -webkit-transform: translateY(-5px) scale(1.05);
+        -ms-transform: translateY(-5px) scale(1.05);
+        transform: translateY(-5px) scale(1.05);
+        background: var(--gradient-red-hover);
+
+        svg {
+            color: var(--textColor1);
+        }
+    }
+
+    svg {
+        width: 33px;
+        height: 33px;
+        margin-bottom: -8px;
+        color: var(--textColor4);
+    }
+
+    .socialDetails {
+        text-align: center;
+        line-height: 1.4;
+
+        p:nth-child(1) {
+            font-size: 20px;
+            font-weight: 500;
+            color: var(--color-lightn);
+        }
+
+        p:nth-child(2) {
+            color: var(--textColor3);
+            color: #878e99;
+        }
+    }
+
+    .redirectLink {
+        color: var(--textColor3);
+        color: #878e99;
+        font-size: 18px;
+    }
+}
+
+form {
+    width: 70%;
+
+    .field {
+        position: relative;
+        width: 100%;
+        margin-bottom: 20px;
+
+        label {
+            position: absolute;
+            left: 18px;
+            top: -13px;
+            background: var(--bgColor3);
+            background: #1C1F23;
+            font-size: 18px;
+            letter-spacing: 1.5px;
+        }
+
+        input,
+        textarea {
+            font-size: var(--pFontSize);
+            color: var(--textColor1);
+            width: 100%;
+            border-radius: 15px;
+            background: transparent;
+            border: 1px solid #d9d9d9;
+            padding: 20px 15px;
+            outline: none;
+            -webkit-transition: all 0.45s ease;
+            -o-transition: all 0.45s ease;
+            transition: all 0.45s ease;
+
+            &:hover {
+                border: 1px solid var(--textColor4);
+            }
+
+            &:focus {
+                border: 1.5px solid var(--textColor4);
+                background: transparent;
+            }
+        }
+    }
+
+    button {
+        -ms-flex-item-align: start;
+        align-self: flex-start;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        font-size: 16px;
+        border-radius: 15px;
+        padding: 28px;
+        height: 58px;
+        width: 227px;
+
+        i {
+            font-size: 18px;
+            margin-left: 5px;
+        }
+    }
+}
+
+.no-hover:hover {
+    background: transparent;
+    border: 1px solid var(--textColor4);
+
+    &::before {
+        -webkit-animation: none;
+        animation: none;
+    }
+}
+
+@media screen and (max-width:890px) {
+    .socialBox {
+        width: 290px;
+        height: 140px;
+    }
+
+    form {
+        width: 80%;
+    }
+
+    .contactContent {
+        width: calc(300px + 50vw);
+    }
+}
+
+@media screen and (max-width:800px) {
+    .socialBox {
+        width: 270px;
+        height: 140px;
+    }
+
+    .field input,
+    textarea {
+        padding: 15px 10px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .TTM {
+        display: none;
+    }
+
+    .contactFormContainer {
+        width: 100%;
+    }
+
+    .contactContent {
+        width: calc(300px + 40vw);
+    }
+}
+
+@media screen and (max-width:630px) {
+    .contactContent {
+        width: calc(300px + 30vw);
+    }
+}
+
+@media screen and (max-width:530px) {
+    .contactContent {
+        width: calc(300px + 20vw);
+    }
+}
+
+@media screen and (max-width:440px) {
+    .contactContent {
+        width: calc(250px + 20vw);
+    }
+}
+
+@media screen and (max-width:380px) {
+    .contactContent {
+        width: calc(250px + 10vw);
+    }
+}
+
+@media screen and (max-width:340px) {
+    .contactContent {
+        width: calc(250px + 0vw);
+    }
+}
