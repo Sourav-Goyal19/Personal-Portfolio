@@ -10,6 +10,7 @@ import { db } from '../../Components/firebase/firebase';
 export const Projects = () => {
     const [selectedProject, setSelectedProject] = useState({});
     const [showModal, setShowModal] = useState(false);
+    const [loadingLikes, setLoadingLikes] = useState(false);
     const [projects, setProjects] = useState([]);
 
     window.addEventListener('keydown', (event) => {
@@ -25,6 +26,7 @@ export const Projects = () => {
 
     const handleLikeToggle = async (event, projectIndex, id) => {
         event.stopPropagation();
+        setLoadingLikes(true);
         const docRef = doc(db, "Projects", id);
         const results = await getDoc(docRef);
         const firebaseProject = results.data();
@@ -41,6 +43,7 @@ export const Projects = () => {
         setProjects((prevProjects) => {
             const updatedProjects = [...prevProjects];
             updatedProjects[projectIndex] = updatedProject;
+            setLoadingLikes(false);
             return updatedProjects;
         });
     };
@@ -91,8 +94,8 @@ export const Projects = () => {
                                     <div className="projectTypeLikes">
                                         <div className="project-type">{project.type}</div>
                                         <div className="project-likes" onClick={(event) => handleLikeToggle(event, index, project.id)}>
-                                            {project.liked ? <FaHeart style={{ color: 'var(--textColor4)' }} /> : <FaRegHeart />}
-                                            {project.likes}
+                                            {loadingLikes ? "Processing..." : (project.liked ? <FaHeart style={{ color: 'var(--textColor4)' }} /> : <FaRegHeart />)}
+                                            {loadingLikes ? "" : project.likes}
                                         </div>
                                     </div>
                                     <div className="project-heading">
