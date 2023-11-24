@@ -24,7 +24,12 @@ export const Footer = (props) => {
                 </div>
 
                 <div className="homeSectionLink">
-                    <div onClick={() => { window.scrollTo(0, 0); }}><BsArrowUpShort /></div>
+                    <div onClick={() => {
+                        window.scrollTo({
+                            top: 0,
+                            behavior: 'smooth',
+                        });
+                    }}><BsArrowUpShort /></div>
                 </div>
             </div>
         </footer>
