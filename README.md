@@ -5,7 +5,7 @@ This repository hosts the code for my personal portfolio website. It is a reflec
 ## Overview
 
 - **Purpose:** Showcase my expertise and projects in a minimalistic manner.
-- **Technologies:** HTML, CSS, JavaScript, React.
+- **Technologies:** HTML, CSS, JavaScript, React, Tailwind CSS, Firebase, SCSS.
 - **Optimization:** The website is optimized for various devices.
 
 ## Feedback
