@@ -8,12 +8,6 @@ const ExperienceSec = (props) => {
             summary: 'During my two-month tenure as a web developer, I dedicated my efforts to impactful projects, including Astropeoples. I specialized in crafting responsive designs, ensuring optimal user experiences through my work on various interfaces.',
             logo: './assets/experiences/experience1.jpeg'
         },
-        {
-            heading: 'Radionics',
-            duration: '07/23 - 09/23',
-            summary: 'During my two-month tenure as a web developer, I dedicated my efforts to impactful projects, including Astropeoples. I specialized in crafting responsive designs, ensuring optimal user experiences through my work on various interfaces.',
-            logo: './assets/experiences/experience1.jpeg'
-        },
     ]
     return (
         <section className='Experience' style={{ background: props.bgColor && props.bgColor }} >
