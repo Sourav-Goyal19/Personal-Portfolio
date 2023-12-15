@@ -172,7 +172,7 @@ const HomeSec = () => {
             rel="noopener noreferrer"
             download={true}
             className={`resume-btn ${resumeInView ? "translate5" : ""}`}
-            href="/assets/Resume.pdf"
+            href="/assets/Resume2.pdf"
           >
             Download <span>Resume</span>
           </a>
