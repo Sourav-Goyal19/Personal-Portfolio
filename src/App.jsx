@@ -72,7 +72,7 @@ function App() {
     });
 
     window.addEventListener('blur', function () {
-      document.title = "Come back ;("
+      document.title = "Come back ;"
     })
 
     window.addEventListener('focus', function () {
