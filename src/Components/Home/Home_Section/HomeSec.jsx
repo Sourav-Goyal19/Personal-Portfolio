@@ -7,6 +7,7 @@ import { useInView } from "react-intersection-observer";
 import { useContext, useEffect, useRef } from "react";
 import { AppContext } from "../../../App";
 import { useLocation } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const HomeSec = () => {
   const location = useLocation();
@@ -67,7 +68,7 @@ const HomeSec = () => {
             ref={outerdivRef}
             className="profile-image-outerdiv"
           >
-            <img
+            <LazyLoadImage
               data-aos="zoom-in"
               data-aos-delay="300"
               src="/assets/profiles/blur3.jpg"
