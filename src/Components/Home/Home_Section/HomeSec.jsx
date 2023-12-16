@@ -140,7 +140,7 @@ const HomeSec = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <BsGithub />
+                <BsGithub size={29} />
               </a>
               <a
                 className="social-media-link"
