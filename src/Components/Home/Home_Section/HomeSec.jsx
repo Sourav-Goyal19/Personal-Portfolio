@@ -74,6 +74,8 @@ const HomeSec = () => {
               src="/assets/profiles/blur3.webp"
               id="profile-image"
               className="profile-image"
+              width={350}
+              height={500}
               alt=""
             />
           </div>
