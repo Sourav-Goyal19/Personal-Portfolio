@@ -71,7 +71,7 @@ const HomeSec = () => {
             <LazyLoadImage
               data-aos="zoom-in"
               data-aos-delay="300"
-              src="/assets/profiles/blur3.jpg"
+              src="/assets/profiles/blur3.webp"
               id="profile-image"
               className="profile-image"
               alt=""
