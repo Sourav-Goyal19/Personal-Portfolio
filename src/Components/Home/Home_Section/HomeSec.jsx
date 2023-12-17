@@ -91,6 +91,7 @@ const HomeSec = () => {
               >
                 Sourav{" "}
                 <a
+                  href="#"
                   ref={lastNameRef}
                   className={`slider ${
                     lastNameInView ? "lastNameAnimation" : ""
