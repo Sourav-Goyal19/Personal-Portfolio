@@ -26,17 +26,11 @@ function App() {
   const [audioPlay, setAudioPlay] = useState(false);
   const [audio, setAudio] = useState(null);
 
-  useEffect(() => {
+  const loadAudio = () => {
     // Dynamically create an audio element
     const audioElement = new Audio("assets/audio/music2.mp3");
     setAudio(audioElement);
-
-    // Clean up when the component is unmounted
-    return () => {
-      audioElement.pause();
-      setAudio(null);
-    };
-  }, []);
+  };
 
   const toggleAudio = () => {
     if (audio) {
@@ -100,6 +94,11 @@ function App() {
     });
   }, []);
 
+  useEffect(() => {
+    // Load the audio file asynchronously
+    loadAudio();
+  }, []);
+
   setTimeout(() => {
     setWelcome(false);
   }, 2500);
@@ -115,13 +114,6 @@ function App() {
       navigate(`/${page}`);
     }, 1500);
   }
-
-  // const volumeFromTop = (navHeight) => {
-  //   const volumeIcon = document.querySelectorAll('.volumeIcon');
-  //   volumeIcon.forEach(icon => {
-  //     icon.style.top = navHeight + 5 + 'px';
-  //   })
-  // }
 
   return (
     <div className="App">
