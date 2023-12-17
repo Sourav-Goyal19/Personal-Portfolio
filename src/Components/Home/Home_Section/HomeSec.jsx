@@ -135,11 +135,12 @@ const HomeSec = () => {
                 className="social-media-link"
                 onMouseLeave={() => removeNameFromCursor()}
                 onMouseEnter={() => {
-                  addNameToCursor("Github");
+                  addNameToCursor("Visit my Github profile");
                 }}
                 href="https://github.com/Sourav-Goyal19"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Github"
               >
                 <BsGithub size={29} />
               </a>
@@ -147,10 +148,12 @@ const HomeSec = () => {
                 className="social-media-link"
                 onMouseLeave={() => removeNameFromCursor()}
                 onMouseEnter={() => {
-                  addNameToCursor("LinkedIn");
+                  addNameToCursor("Connect with me on LinkedIn");
                 }}
                 href="https://www.linkedin.com/in/sourav-goyal-0555a51b4/"
                 target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
               >
                 <AiFillLinkedin size={29} />
               </a>
@@ -158,11 +161,12 @@ const HomeSec = () => {
                 className="social-media-link"
                 onMouseLeave={() => removeNameFromCursor()}
                 onMouseEnter={() => {
-                  addNameToCursor("Instagram");
+                  addNameToCursor("Follow me on Instagram");
                 }}
                 href="https://www.instagram.com/goyalsourav8893/"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Instagram"
               >
                 <BsInstagram size={24} />
               </a>
