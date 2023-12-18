@@ -95,7 +95,6 @@ function App() {
   }, []);
 
   useEffect(() => {
-    // Load the audio file asynchronously
     loadAudio();
   }, []);
 
