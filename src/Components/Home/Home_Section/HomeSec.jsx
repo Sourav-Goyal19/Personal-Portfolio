@@ -92,15 +92,14 @@ const HomeSec = () => {
                 className={`my-name ${firstNameInView ? "translate" : ""}`}
               >
                 Sourav{" "}
-                <a
-                  href="#"
+                <p
                   ref={lastNameRef}
                   className={`slider ${
                     lastNameInView ? "lastNameAnimation" : ""
                   }`}
                 >
                   <span className={`last-name`}>Goyal</span>
-                </a>
+                </p>
               </h2>
               <div
                 ref={smallAboutRef}
