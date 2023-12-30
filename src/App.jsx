@@ -11,7 +11,7 @@ import { Contact } from "./Pages/Contact/Contact";
 import { WelcomePage } from "./Components/WelcomePage/WelcomePage";
 import { Footer } from "./Components/Footer/Footer";
 import "react-toastify/dist/ReactToastify.css";
-import { ToastContainer } from "react-toastify";
+import { Toaster } from "react-hot-toast";
 import { TbVolume, TbVolumeOff } from "react-icons/tb";
 
 export const AppContext = createContext();
@@ -164,17 +164,14 @@ function App() {
           </>
         )}
       </AppContext.Provider>
-      <ToastContainer
-        position="top-right"
-        autoClose={3000}
-        hideProgressBar={false}
-        newestOnTop={true}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="dark"
+      <Toaster
+        toastOptions={{
+          style: {
+            background: "#333",
+            color: "#fff",
+            borderRadius: "10px",
+          },
+        }}
       />
     </div>
   );
