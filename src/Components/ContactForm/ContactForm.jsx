@@ -88,7 +88,7 @@ export default function ContactForm() {
     e.preventDefault();
     emailjs
       .sendForm(
-        "service_49d594c",
+        "service_ro8oh0i",
         "template_btgybrg",
         form.current,
         "jYLOTl3Rkd-bMEbKQ"
