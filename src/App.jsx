@@ -10,7 +10,6 @@ import { About } from "./Pages/About/About";
 import { Contact } from "./Pages/Contact/Contact";
 import { WelcomePage } from "./Components/WelcomePage/WelcomePage";
 import { Footer } from "./Components/Footer/Footer";
-import "react-toastify/dist/ReactToastify.css";
 import { Toaster } from "react-hot-toast";
 import { TbVolume, TbVolumeOff } from "react-icons/tb";
 
