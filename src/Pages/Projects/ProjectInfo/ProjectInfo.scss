@@ -1,89 +1,91 @@
 .projectInfoContainer {
-    width: 80vw;
-    padding: calc(20px + 1.4vw);
-    height: 70vh;
+  width: 80vw;
+  padding: calc(20px + 1.4vw);
+  height: 70vh;
 }
 
 .projectModalContent {
-    height: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    overflow: hidden;
-    gap: 20px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  overflow: hidden;
+  gap: 20px;
 }
 
 .projectModalLogo {
-    width: 100%;
-    overflow: hidden;
-    border-radius: 10px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
 
-    img {
-        border-radius: 10px;
-        width: 100%;
-        object-fit: cover;
-    }
+  img {
+    border-radius: 10px;
+    width: 100%;
+    object-fit: cover;
+  }
 }
 
 .projectModalText {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    // border: 1px solid white;
-    justify-content: space-between;
-    gap: 5px;
-    padding-bottom: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  // border: 1px solid white;
+  justify-content: space-between;
+  gap: 10px;
+  padding-bottom: 20px;
 }
 
 .projectModalType {
-    font-size: 18px;
-    color: var(--textColor5);
+  font-size: 18px;
+  color: var(--textColor5);
 }
 
 .projectModalHeading {
-    font-size: min(calc(10px + 2.5vw));
-    line-height: 1;
-    color: var(--color-lightn);
+  font-size: min(calc(10px + 2.5vw));
+  line-height: 1;
+  color: var(--color-lightn);
 }
 
 .projectModalDescription {
-    color: var(--textColor5);
-    font-size: var(--pFontSize);
+  color: var(--textColor5);
+  font-size: var(--pFontSize);
 }
 
 .projectModalLinks {
-    position: relative;
+  position: relative;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap-reverse;
+
+  a {
     display: flex;
-    gap: 15px;
-    flex-wrap: wrap-reverse;
+    gap: 10px;
+    align-items: center;
+    padding: 8px 12px;
+    color: var(--textColor4);
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    font-size: var(--pFontSize);
+    background: linear-gradient(145deg, rgb(30, 32, 36), rgb(35, 39, 43)) 0% 0% /
+      auto repeat scroll padding-box border-box rgba(0, 0, 0, 0);
+    transition: all 0.45s ease;
 
-    a {
-        display: flex;
-        gap: 10px;
-        align-items: center;
-        padding: 8px 12px;
-        color: var(--textColor4);
-        box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
-        border-radius: 5px;
-        font-size: var(--pFontSize);
-        background: linear-gradient(145deg, rgb(30, 32, 36), rgb(35, 39, 43)) 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0);
-        transition: all 0.45s ease;
-
-        &:hover {
-            background: linear-gradient(to right bottom, #212428, #16181c);
-            transform: translateY(-4px);
-        }
+    &:hover {
+      background: linear-gradient(to right bottom, #212428, #16181c);
+      transform: translateY(-4px);
     }
+  }
 }
 
-@media screen and (max-width:960px) {
-    .projectInfoContainer {
-        height: calc(500px + 30.0vw);
-    }
+@media screen and (max-width: 960px) {
+  .projectInfoContainer {
+    height: fit-content;
+  }
 
-    .projectModalContent {
-        overflow: scroll;
-        grid-template-columns: none;
-        // border: 1px solid white;
-        grid-template-rows: repeat(2, 1fr);
-    }
+  .projectModalContent {
+    overflow: scroll;
+    grid-template-columns: none;
+  }
+  .projectModalLogo {
+    max-height: 250px;
+  }
 }
