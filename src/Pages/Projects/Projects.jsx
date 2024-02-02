@@ -92,7 +92,7 @@ export const Projects = () => {
           {projects.length === 0 ? (
             <h1
               className={`heading projectsHeading`}
-              style={{ color: "#BBCBBF"}}
+              style={{ color: "#BBCBBF" }}
             >
               Loading........
             </h1>
