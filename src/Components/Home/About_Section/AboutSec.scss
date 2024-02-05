@@ -30,7 +30,7 @@ $pFontSize: var(--pFontSize);
   color: rgb(196, 207, 222);
   font-family: Montserrat, sans-serif;
   word-break: break-word;
-  text-align: start;
+  text-align: center;
   text-size-adjust: 100%;
   // background-color: rgb(33, 36, 40);
 }
@@ -335,7 +335,6 @@ $pFontSize: var(--pFontSize);
     position: absolute;
     left: 0;
     bottom: 0%;
-    margin: 15px;
   }
 
   .aboutBoxContainer {
