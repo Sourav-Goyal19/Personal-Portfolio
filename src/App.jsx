@@ -143,7 +143,12 @@ function App() {
             style={{ cursor: "pointer" }}
           />
         )}
-        {audio && <audio loop src="assets/audio/music2.mp3"></audio>}
+        {audio && (
+          <audio
+            loop
+            src="https://res.cloudinary.com/dvovo1lfg/video/upload/f_auto:video,q_auto/gpwnfunof8lt3jkma7kp"
+          ></audio>
+        )}
         {welcome ? (
           <WelcomePage />
         ) : (
