@@ -13,8 +13,8 @@ export const About = () => {
           <div className="aboutPageContent">
             <p>
               {" "}
-              I'm a <span>Frontend Web Developer</span> and passionate about web
-              development. I'm on a journey to transform my passion into a
+              I'm a <span>FullStack Web Developer</span> and passionate about
+              web development. I'm on a journey to transform my passion into a
               fulfilling career. I'm currently pursuing my <span>BCA</span>{" "}
               (Bachelor of Computer Applications) in the bustling city of New
               Delhi. My academic journey has provided me with a strong

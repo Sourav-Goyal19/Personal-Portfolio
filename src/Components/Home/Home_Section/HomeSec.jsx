@@ -110,7 +110,7 @@ const HomeSec = () => {
                 <h2>I'm a</h2>
                 <div>
                   <h2>Programmer</h2>
-                  <h2>Frontend Developer</h2>
+                  <h2>FullStack Developer</h2>
                   <h2>BCA Student</h2>
                   <h2>Freelencer</h2>
                   <h2>Programmer</h2>
@@ -120,10 +120,10 @@ const HomeSec = () => {
                 ref={bioRef}
                 className={`bio ${bioInView ? "translate3" : ""}`}
               >
-                I'm a passionate and dedicated Frontend Developer with a strong
-                focus on user experience. I'm currently focused on building
-                responsive and accessible web applications. I'm also interested
-                in learning new technologies and solving problems.
+                I'm a passionate and dedicated Web Developer with a strong focus
+                on user experience. I'm currently focused on building responsive
+                and accessible web applications. I'm also interested in learning
+                new technologies and solving problems.
               </p>
             </div>
             <div

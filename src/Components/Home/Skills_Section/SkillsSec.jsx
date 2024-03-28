@@ -97,7 +97,7 @@ const SkillsSec = (props) => {
         <div className="flex justify-center items-center gap-8 lg:gap-16 flex-wrap mt-10">
           <div
             data-aos="fade-right"
-            className="border-2 border-[#FF014F] rounded-lg p-5 w-96 h-72"
+            className="border-2 border-[#FF014F] rounded-lg p-5 w-[300px] h-80 sm:w-96 sm:h-72"
           >
             <h3 className="text-3xl text-center text-[#c9c8c8] pb-6">
               Frontend
@@ -117,7 +117,7 @@ const SkillsSec = (props) => {
           <div
             data-aos="fade-right"
             data-aos-delay="300"
-            className="border-2 border-[#FF014F] rounded-lg p-5 w-96 h-72"
+            className="border-2 border-[#FF014F] rounded-lg p-5 w-[300px] h-80 sm:w-96 sm:h-72"
           >
             <h3 className="text-3xl text-center text-[#c9c8c8] pb-6">
               Backend
@@ -137,7 +137,7 @@ const SkillsSec = (props) => {
           <div
             data-aos="fade-right"
             data-aos-delay="600"
-            className="border-2 border-[#FF014F] rounded-lg p-5 w-96 h-72"
+            className="border-2 border-[#FF014F] rounded-lg p-5 w-[300px] h-80 sm:w-96 sm:h-72"
           >
             <h3 className="text-3xl text-center text-[#c9c8c8] pb-6">Other</h3>
             <div className="flex gap-3 flex-wrap justify-center">
