@@ -39,6 +39,10 @@ const SkillsSec = (props) => {
   ];
   const backendSkills = [
     {
+      name: "Next JS",
+      icon: "/assets/svgs/next.svg",
+    },
+    {
       name: "Node JS",
       icon: "/assets/svgs/node.svg",
     },
